@@ -45,7 +45,7 @@ namespace Charmap
             {
                 return;
             }
-            if (!new Regex("^[0-9a-fA-F]+$").IsMatch(s))
+            if (!new Regex("^[0-9A-Fa-f]+$").IsMatch(s))
             {
                 s = Unicode.Encode(s)[0];
             }
